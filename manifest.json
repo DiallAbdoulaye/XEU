@@ -1,0 +1,9 @@
+{
+  "name": "PWA Currency",
+  "short_name": "PWA Currency Converter",
+  "lang": "fr-FR",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "any",
+  "theme_color": "#d9dde2"
+}

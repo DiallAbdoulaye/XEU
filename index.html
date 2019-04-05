@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <script src="main.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="PWA Currency Converter">
+    <meta name="apple-mobile-web-app-title" content="PWA Currency Converter">
+    <meta name="theme-color" content="#d9dde2">
+    <meta name="msapplication-navbutton-color" content="#d9dde2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>XEU</title>
+  </head>
+  <body>
+    <div class="container">
+
+
+         <div class="jumbotron">
+           <h1 class="display-3">XEU</h1>
+           <p class="lead">Welcome to the sexiest Progressive Web Application about foreign exchange rates and currency conversion.</p>
+        </div>
+
+         <div class="row-marketing">
+           <form>
+             <div class="form-group">
+              <label for="exampleFormControlInput1">Currency (EUR)</label>
+              <input type="devise" class="form-control" id="devise1" placeholder="Please enter a price in EUR">
+            </div>
+            <div class="form-group">
+              <label for="CurrencySelector">Select a currency</label>
+              <select class="form-control" id="CurrencySelector">
+                <option>Livre Sterling (GBP)</option>
+                <option>Franc Suisse (CHF)</option>
+                <option>Dollars (USD)</option>
+                <option>Yen (JPY)</option>
+                <option>Dinar koweïtien (KWD)</option>
+              </select>
+            </div>
+             <!-- <input type="text" id="devise" class="fadeIn second" name="devise" placeholder="Please enter your price in EUR"> -->
+             <a class="btn btn-info" onClick="latestFetch()">Convert</a>
+           </form>
+
+        </div>
+        <div class="row-marketing" id="display">
+        </div>
+  </div>
+  </body>
+</html>
